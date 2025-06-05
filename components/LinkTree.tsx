@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import LinkButton from './LinkButton';
 import LeadModal from './LeadModal'; // Import the modal component
-import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaBook, FaMapMarkedAlt, FaUsers, FaDownload } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaBook, FaUsers, FaDownload } from 'react-icons/fa';
 
 const LinkTree: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
