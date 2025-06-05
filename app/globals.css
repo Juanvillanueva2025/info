@@ -1,0 +1,50 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255; /* White text */
+  --background-start-rgb: 26, 26, 26; /* #1a1a1a */
+  --background-end-rgb: 26, 26, 26; /* #1a1a1a */
+}
+
+/* Consider adding dark mode preferences if needed, though the design is already dark */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 26, 26, 26;
+    --background-end-rgb: 26, 26, 26;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb)); /* Apply the custom dark background */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Ensure html and body take full height for centering */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the Next.js root div also takes full height */
+#__next {
+  height: 100%;
+}
+
+main {
+    min-height: 100vh; /* Ensure main content area takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
